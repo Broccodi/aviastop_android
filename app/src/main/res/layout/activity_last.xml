@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LastActivity"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:onClick="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="370dp"
+        android:layout_height="131dp"
+        android:background="@drawable/blue_rect_last_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/airportsTextViewLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VKO - LIS"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.1"
+        android:textSize="24sp"
+        android:textColor="@color/blue"/>
+
+    <TextView
+        android:id="@+id/departureMomentTextViewLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:15\n30 september"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/airportsTextViewLA"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <View
+        android:id="@+id/lineView4"
+        android:layout_width="30dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/airportsTextViewLA" />
+
+    <TextView
+        android:id="@+id/arriveMomentTextViewLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:15\n30 september"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/airportsTextViewLA"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/buyTicketButton"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:background="@drawable/search_button"
+        android:text="BUY TICKET FOR 8 003 ₽"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        android:onClick="notYet"/>
+
+
+
+
+
+
+
+
+
+    <View
+        android:id="@+id/info1"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/buyTicketButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.04"
+        android:background="@drawable/info_la_white"/>
+    <TextView
+        android:id="@+id/airportInfo11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VKO"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info1"
+        app:layout_constraintEnd_toEndOf="@+id/info1"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/info1"
+        app:layout_constraintTop_toTopOf="@+id/info1"
+        app:layout_constraintVertical_bias="0.29" />
+    <View
+        android:id="@+id/lineView5"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/info1"
+        app:layout_constraintEnd_toEndOf="@+id/info1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/info1"
+        app:layout_constraintTop_toTopOf="@+id/info1"
+        app:layout_constraintVertical_bias="0.35" />
+    <TextView
+        android:id="@+id/airportInfo12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTS"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info1"
+        app:layout_constraintEnd_toEndOf="@+id/info1"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/info1"
+        app:layout_constraintTop_toTopOf="@+id/info1"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/departureMomentTextViewLA_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:15\n30 september"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info1"
+        app:layout_constraintEnd_toEndOf="@+id/info1"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="@+id/info1"
+        app:layout_constraintTop_toBottomOf="@+id/airportInfo11" />
+    <TextView
+        android:id="@+id/departureMomentTextViewLA_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18:50\n30 september"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info1"
+        app:layout_constraintEnd_toEndOf="@+id/info1"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="@+id/info1"
+        app:layout_constraintTop_toBottomOf="@+id/airportInfo11" />
+
+    <TextView
+        android:id="@+id/flightDuration1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02h 35m"
+        app:layout_constraintBottom_toBottomOf="@+id/info1"
+        app:layout_constraintEnd_toEndOf="@+id/info1"
+        app:layout_constraintStart_toStartOf="@+id/info1"
+        app:layout_constraintTop_toBottomOf="@+id/lineView5"
+        app:layout_constraintVertical_bias="0.05"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+
+
+
+
+    <View
+        android:id="@+id/info2"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/buyTicketButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.35"
+        android:background="@drawable/info_la_orange"/>
+    <TextView
+        android:id="@+id/airportInfo21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTS"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info2"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toTopOf="@+id/info2"
+        app:layout_constraintVertical_bias="0.29" />
+    <View
+        android:id="@+id/lineView6"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/info2"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toTopOf="@+id/info2"
+        app:layout_constraintVertical_bias="0.35" />
+    <TextView
+        android:id="@+id/airportInfo22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BVA"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info2"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toTopOf="@+id/info2"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/departureMomentTextViewLA_21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:00\n1 october"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info2"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toBottomOf="@+id/airportInfo21" />
+    <TextView
+        android:id="@+id/departureMomentTextViewLA_22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:05\n1 october"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info2"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toBottomOf="@+id/airportInfo21" />
+    <TextView
+        android:id="@+id/flightDuration2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02h 05m"
+        app:layout_constraintBottom_toBottomOf="@+id/info2"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toBottomOf="@+id/lineView6"
+        app:layout_constraintVertical_bias="0.05"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+
+
+
+
+
+    <View
+        android:id="@+id/info3"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/buyTicketButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.66"
+        android:background="@drawable/info_la_white"/>
+    <TextView
+        android:id="@+id/airportInfo31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BVA"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info3"
+        app:layout_constraintEnd_toEndOf="@+id/info3"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/info3"
+        app:layout_constraintTop_toTopOf="@+id/info3"
+        app:layout_constraintVertical_bias="0.29" />
+    <View
+        android:id="@+id/lineView7"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/info3"
+        app:layout_constraintEnd_toEndOf="@+id/info3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/info3"
+        app:layout_constraintTop_toTopOf="@+id/info3"
+        app:layout_constraintVertical_bias="0.35" />
+    <TextView
+        android:id="@+id/airportInfo32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIS"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info3"
+        app:layout_constraintEnd_toEndOf="@+id/info3"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/info3"
+        app:layout_constraintTop_toTopOf="@+id/info3"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/departureMomentTextViewLA_31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:35\n2 october"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info3"
+        app:layout_constraintEnd_toEndOf="@+id/info3"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="@+id/info3"
+        app:layout_constraintTop_toBottomOf="@+id/airportInfo31" />
+    <TextView
+        android:id="@+id/departureMomentTextViewLA_32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:10\n2 october"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info3"
+        app:layout_constraintEnd_toEndOf="@+id/info3"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="@+id/info3"
+        app:layout_constraintTop_toBottomOf="@+id/airportInfo31" />
+
+    <TextView
+        android:id="@+id/flightDuration3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02h 35m"
+        app:layout_constraintBottom_toBottomOf="@+id/info3"
+        app:layout_constraintEnd_toEndOf="@+id/info3"
+        app:layout_constraintStart_toStartOf="@+id/info3"
+        app:layout_constraintTop_toBottomOf="@+id/lineView7"
+        app:layout_constraintVertical_bias="0.05"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can find interesting excursion here to see town"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/lineView6"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toTopOf="@+id/info2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="order\nexcursion"
+        android:textAllCaps="false"
+        android:background="@drawable/orange_button"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/info2"
+        app:layout_constraintEnd_toStartOf="@+id/departureMomentTextViewLA_22"
+        app:layout_constraintStart_toEndOf="@+id/departureMomentTextViewLA_21"
+        app:layout_constraintTop_toBottomOf="@+id/flightDuration2"
+        android:onClick="goToSite"/>
+
+
+    <!--    <View
+            android:id="@+id/info4"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/buyTicketButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.97"
+            android:background="@drawable/info_la_white"/>
+        <TextView
+            android:id="@+id/airportInfo41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VKO"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/info4"
+            app:layout_constraintEnd_toEndOf="@+id/info4"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="@+id/info4"
+            app:layout_constraintTop_toTopOf="@+id/info4"
+            app:layout_constraintVertical_bias="0.29" />
+        <View
+            android:id="@+id/lineView8"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            app:layout_constraintBottom_toBottomOf="@+id/info4"
+            app:layout_constraintEnd_toEndOf="@+id/info4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/info4"
+            app:layout_constraintTop_toTopOf="@+id/info4"
+            app:layout_constraintVertical_bias="0.35" />
+        <TextView
+            android:id="@+id/airportInfo42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTS"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/info4"
+            app:layout_constraintEnd_toEndOf="@+id/info4"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="@+id/info4"
+            app:layout_constraintTop_toTopOf="@+id/info4"
+            app:layout_constraintVertical_bias="0.29" />
+
+        <TextView
+            android:id="@+id/departureMomentTextViewLA_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:15\n30 september"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/info4"
+            app:layout_constraintEnd_toEndOf="@+id/info4"
+            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintStart_toStartOf="@+id/info4"
+            app:layout_constraintTop_toBottomOf="@+id/airportInfo41" />
+        <TextView
+            android:id="@+id/departureMomentTextViewLA_42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:15\n30 september"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/info4"
+            app:layout_constraintEnd_toEndOf="@+id/info4"
+            app:layout_constraintHorizontal_bias="0.82"
+            app:layout_constraintStart_toStartOf="@+id/info4"
+            app:layout_constraintTop_toBottomOf="@+id/airportInfo41" />
+
+        <TextView
+            android:id="@+id/flightDuration4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02h 35m"
+            app:layout_constraintBottom_toBottomOf="@+id/info4"
+            app:layout_constraintEnd_toEndOf="@+id/info4"
+            app:layout_constraintStart_toStartOf="@+id/info4"
+            app:layout_constraintTop_toBottomOf="@+id/lineView8"
+            app:layout_constraintVertical_bias="0.05"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"/> -->
+</androidx.constraintlayout.widget.ConstraintLayout>
